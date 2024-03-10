@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      style="
+        border: 2px solid blue;
+        background-color: aqua;
+        border-radius: 10px;
+      "
+      width="400px"
+      height="220px"
+    ></canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas"),
+        ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.beginPath();
+      ctx.font = "30px Arials";
+      ctx.fillText("HUFI 2021", 130, 60);
+      ctx.beginPath();
+      ctx.arc(200, 0, 110, 0, Math.PI);
+      ctx.strokeStyle = "green";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(200, 0, 130, 0, Math.PI);
+      ctx.strokeStyle = "red";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(200, 0, 150, 0, Math.PI);
+      ctx.strokeStyle = "blue";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(0, 170);
+      ctx.lineTo(300, 170);
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = "black";
+      ctx.stroke();
+      ctx.moveTo(0, 190);
+      ctx.lineTo(340, 190);
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = "black";
+      ctx.stroke();
+      ctx.moveTo(0, 210);
+      ctx.lineTo(380, 210);
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = "black";
+      ctx.stroke();
+    </script>
+  </body>
+</html>

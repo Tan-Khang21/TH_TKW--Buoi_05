@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      style="
+        border: 2px solid blue;
+        background-color: aqua;
+        border-radius: 10px;
+      "
+      width="400px"
+      height="220px"
+    ></canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas"),
+        ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(200, 100, 70, 0, 2 * Math.PI);
+      ctx.strokeStyle = "blue";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      style="
+        border: 2px solid blue;
+        background-color: aqua;
+        border-radius: 10px;
+      "
+      width="400px"
+      height="220px"
+    ></canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas"),
+        ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(200, 100, 70, 0, 2 * Math.PI);
+      ctx.strokeStyle = "blue";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.arc(200, 100, 90, (19 / 18) * Math.PI, (4 / 3) * Math.PI);
+      ctx.strokeStyle = "blue";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(200, 100, 110, (19 / 18) * Math.PI, (4 / 3) * Math.PI);
+      ctx.strokeStyle = "blue";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(200, 100, 90, (5 / 3) * Math.PI, (35 / 18) * Math.PI);
+      ctx.strokeStyle = "#808080";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(200, 100, 110, (5 / 3) * Math.PI, (35 / 18) * Math.PI);
+      ctx.strokeStyle = "#808080";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(200, 100, 130, (5 / 3) * Math.PI, (35 / 18) * Math.PI);
+      ctx.strokeStyle = "#808080";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(200, 100, 150, (5 / 3) * Math.PI, (35 / 18) * Math.PI);
+      ctx.strokeStyle = "#808080";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(200, 100, 170, (5 / 3) * Math.PI, (35 / 18) * Math.PI);
+      ctx.strokeStyle = "#808080";
+      ctx.lineWidth = 6;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.font = "20px Arials";
+      ctx.fillText("GLOBAL 2021", 140, 205);
+      ctx.moveTo(130, 100);
+      ctx.lineTo(270, 100);
+      ctx.lineWidth = 6;
+      ctx.strokeStyle = "blue";
+      ctx.stroke();
+      ctx.moveTo(120, 100);
+      ctx.lineTo(270, 90);
+      ctx.lineWidth = 6;
+      ctx.strokeStyle = "blue";
+      ctx.stroke();
+      ctx.moveTo(130, 100);
+      ctx.lineTo(270, 100);
+      ctx.lineWidth = 6;
+      ctx.strokeStyle = "blue";
+      ctx.stroke();
+      ctx.moveTo(130, 100);
+      ctx.lineTo(270, 100);
+      ctx.lineWidth = 6;
+      ctx.strokeStyle = "blue";
+      ctx.stroke();
+    </script>
+  </body>
+</html>
